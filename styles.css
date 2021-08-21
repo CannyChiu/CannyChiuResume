@@ -1,0 +1,94 @@
+header {
+  background-color: blue;
+}
+
+footer {
+  background-color: grey;
+  color: white;
+  font-weight: bold;
+  margin: 0;
+}
+
+nav {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h1{
+  margin-top: 0;
+}
+
+body {
+  font-family: "Lato";
+  margin: 0;
+}
+
+.bluewhite {
+  background-color: #269DFF;
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 700px;
+  padding: 40px 0;
+
+}
+
+.subtitle {
+  font-size: 50px;
+  font-weight: 50px;
+  margin: 0;
+  text-align: center;
+  color: #236AB9;
+}
+
+.yearofwork{
+  font-size: 35px;
+  font-weight: 30px;
+  color: #236AB9;
+  margin:10px 0;
+}
+
+.employer{
+  font-size: 20px;
+  font-weight: 20px;
+  color: #236AB9;
+  margin:10px 0;
+}
+
+.jobtitle{
+  font-weight: bold;
+  margin:10px 0;
+}
+
+.jobdescription {
+  font-style: italic;
+}
+
+#footername{
+  font-size: 40px;
+  margin: 0;
+  text-align: center;
+}
+
+#footerjobtitle{
+  text-align:center;
+}
+
+#introductiontome{
+  text-align: center;
+}
+
+#CannyChiutitle{
+  color:white;
+}
+
+#SkillsTitle{
+  color:white;
+}
+
+li,span {
+  font-size: 18px;
+}

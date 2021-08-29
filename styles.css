@@ -1,5 +1,6 @@
 header {
   background-color: blue;
+  background: linear-gradient(55deg, #269DFF, #4530A7);
 }
 
 footer {
@@ -7,11 +8,7 @@ footer {
   color: white;
   font-weight: bold;
   margin: 0;
-}
-
-nav {
-  text-transform: uppercase;
-  text-align: center;
+  background: linear-gradient(55deg, #269DFF, #4530A7);
 }
 
 h1{
@@ -24,7 +21,7 @@ body {
 }
 
 .bluewhite {
-  background-color: #269DFF;
+  background: linear-gradient(55deg, #269DFF, #4530A7);
   color: white;
   text-decoration: none;
 }
@@ -33,62 +30,187 @@ body {
   margin: 0 auto;
   width: 700px;
   padding: 40px 0;
-
 }
 
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.menu-link {
+  margin-left: 10px;
+}
+
+.headerparent{
+  display:flex;
+  align-items: flex-start;
+}
 .subtitle {
   font-size: 50px;
   font-weight: 50px;
   margin: 0;
-  text-align: center;
   color: #236AB9;
-}
-
-.yearofwork{
-  font-size: 35px;
-  font-weight: 30px;
-  color: #236AB9;
-  margin:10px 0;
-}
-
-.employer{
-  font-size: 20px;
-  font-weight: 20px;
-  color: #236AB9;
-  margin:10px 0;
-}
-
-.jobtitle{
-  font-weight: bold;
-  margin:10px 0;
 }
 
 .jobdescription {
   font-style: italic;
 }
 
-#footername{
-  font-size: 40px;
+.headerflex {
+  display:flex;
+  justify-content: space-between;
+}
+
+.yearofwork{
+  font-weight: 30px;
+  color: #236AB9;
+  margin:10px 0;
+  font-size: 25px;
+}
+
+.employer{
+  font-weight: 20px;
+  color: #236AB9;
+  margin:10px 0;
+font-size:22px;
+}
+
+.jobtitle{
+  font-weight: bold;
+  margin:10px 0;
+font-size: 20px;
+}
+
+.jobdescription {
+  font-style: italic;
+}
+
+.flexboxjobexperiences{
+  display:flex;
+  justify-content: stretch;
+  align-items: center;
+  margin:0 40px;
+}
+
+.bottomnav {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  color:white;
+}
+
+.othernav {
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  align-content: center;
+  color:white;
+}
+
+.skillsflex {
+  display:flex;
+  align-items: center;
+  align-content: center;
+}
+
+.skillschild{
+  flex:3;
+  margin: 10px 20px;
+}
+/* This is pretty shitty code to fix the margin issue, but a class wasn't working */
+#marginfix{
+  margin: 0 30px;
+}
+
+#CannyChiutitle, #intro-title, #SkillsTitle {
+  color:white;
+}
+
+#footername {
+  font-size: 50px;
+  text-transform: uppercase;
   margin: 0;
-  text-align: center;
 }
 
-#footerjobtitle{
-  text-align:center;
+
+a {
+  transition-property:color,font-size;
+  transition-duration: 2s;
+  transition-timing-function: ease-out;
+  transition-delay: .5ms;
 }
 
-#introductiontome{
-  text-align: center;
+a:hover{
+  color:#4530A7;
+  font-size: 30px;
 }
 
-#CannyChiutitle{
-  color:white;
+#about p::first-letter{
+  font-weight: bold;
+  font-size: 25px;
 }
 
-#SkillsTitle{
-  color:white;
+p::selection {
+  color:#4530A7;
 }
 
-li,span {
-  font-size: 18px;
+meter::-webkit-meter-bar{
+  border-radius: 20px;
+}
+
+meter::-webkit-meter-optimum-value {
+  background: #4530A7;
+}
+
+.parallax1 {
+background: url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1652&q=80");
+background-size:cover;
+background-attachment:fixed;
+height: 600px;
+}
+
+.parallax2 {
+background: url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1652&q=80");
+background-size:cover;
+background-attachment:fixed;
+background-position: top;
+height: 300px;
+}
+@media (max-width: 480px) {
+  .bottomnav {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.skillsflex{
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin:0;
+}
+.subtitle{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin:0;
+}
+
+/* The images are hardcoded to align to the right, would probably look into fixing that */
+.flexboxjobexperiences{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin:0;
+}
+.menu{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin:0;
+}
 }
